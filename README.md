@@ -30,7 +30,10 @@ In this case, *001-Glioma-AYEY* is the general patient ID, *001* is the patient 
 ### Automated segmentation tool 
 We provide a Docker container to segment MR images on your side. 
 *segment_one_subject.sh* is the shell script to run the container on one subject. 
-Please make sure your FLAIR, T1, T1-ce, and T2 images have the same naming format as the *001-Glioma-AYEY* example before. 
+Please make sure:
+(a) The FLAIR, T1, T1-ce, and T2 images have the same naming format as the *001-Glioma-AYEY* example before. 
+(b) The *nvidia-container-toolkit* package is installed corrected. 
+
 
 ### Preprocessing scripts
 We provide the shell pre-processing scripts based on existing packages. Please check the 'preprocessing' folder. 
