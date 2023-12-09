@@ -1,3 +1,3 @@
 # MOTUM
-![motum logo](logo_motum.png)
+<img src="logo_motum.png" width="200">
 the official repository for MOTUM dataset
