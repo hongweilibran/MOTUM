@@ -2,8 +2,8 @@
 ### Pre-installed packages: FSL6;
 ### The input folder is expected to contain multiple subjects 
 
-INPUTDIR=/your/input/folder
-OUTPUTDIR=/your/output/folder
+INPUTDIR=/your/input/folder/
+OUTPUTDIR=/your/output/folder/
 
 mkdir $OUTPUTDIR
 for file in ${INPUTDIR}*; do
