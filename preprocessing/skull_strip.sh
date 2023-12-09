@@ -1,14 +1,7 @@
-### pre-installed packages: FSL6; https://github.com/NeuroAI-HD/HD-GLIO; 
+### pre-installed packages: https://github.com/NeuroAI-HD/HD-GLIO; 
 
-
-#INPUTDIR=/hdd3/bran/data/SD_glioma/orig/breast_metastasis/
-#INPUTDIR=/hdd3/bran/data/SD_glioma/orig/glioma_HG/
-# INPUTDIR=/hdd3/bran/data/SD_glioma/orig/lung_metastasis/
-INPUTDIR=/hdd3/bran/data/SD_glioma/orig/Update_2/
-#OUTPUTDIR=/hdd3/bran/data/SD_glioma/pre/breast_metastasis/
-#OUTPUTDIR=/hdd3/bran/data/SD_glioma/pre/glioma_HG/
-# OUTPUTDIR=/hdd3/bran/data/SD_glioma/pre/lung_metastasis/
-OUTPUTDIR=/hdd3/bran/data/SD_glioma/pre/Update_2/
+INPUTDIR=/your/input/folder/
+OUTPUTDIR=/your/output/folder/
 
 for file in ${INPUTDIR}*; do
     mkdir $OUTPUTDIR$(basename "$file")
