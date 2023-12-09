@@ -1,12 +1,9 @@
-### pre-installed packages: FSL6; https://github.com/NeuroAI-HD/HD-GLIO; 
+### Co-registration using T1 as a reference
+### Pre-installed packages: FSL6;
+### The input folder is expected to contain multiple subjects 
 
-#INPUTDIR=/hdd3/bran/data/SD_glioma/pre/breast_metastasis/
-#INPUTDIR=/hdd3/bran/data/SD_glioma/pre/glioma_HG/
-INPUTDIR=/hdd3/bran/data/SD_glioma/pre/Update_2/
-#OUTPUTDIR=/hdd3/bran/data/SD_glioma/pre_reg/breast_metastasis/
-#OUTPUTDIR=/hdd3/bran/data/SD_glioma/pre_reg/glioma_HG/
-# OUTPUTDIR=/hdd3/bran/data/SD_glioma/pre_reg/lung_metastasis/
-OUTPUTDIR=/hdd3/bran/data/SD_glioma/pre_reg/Update_2/
+INPUTDIR=/your/input/folder
+OUTPUTDIR=/your/output/folder
 
 mkdir $OUTPUTDIR
 for file in ${INPUTDIR}*; do
@@ -17,9 +14,3 @@ for file in ${INPUTDIR}*; do
     flirt -in $file"/t1ce.nii.gz" -out $OUTPUTDIR$(basename "$file")"/t1ce.nii.gz" -ref $INPUTDIR$(basename "$file")"/t1.nii.gz" -omat t1ce_to_t1.mat -interp spline -dof 6
     flirt -in $file"/t2.nii.gz" -out $OUTPUTDIR$(basename "$file")"/t2.nii.gz" -ref $INPUTDIR$(basename "$file")"/t1.nii.gz" -omat t2_to_t1.mat -interp spline -dof 6
 done
-
-
-# perform brain extraction using HD-BET (https://github.com/MIC-DKFZ/HD-BET)
-
-
-
