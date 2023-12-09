@@ -1,6 +1,6 @@
 ### Co-registration using T1 as a reference
 ### Pre-installed packages: FSL6;
-### The input folder is expected to contain multiple subjects 
+### The input folder is expected to contain multiple subjects after skull-stripping
 
 INPUTDIR=/your/input/folder/
 OUTPUTDIR=/your/output/folder/
