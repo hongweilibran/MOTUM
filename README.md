@@ -1,4 +1,4 @@
-<img src="logo_motum.png" width="200">
+<img src="logo_motum.png" width="250">
 This repository serves as the official source for the MOTUM dataset, a sustained effort to make a diverse collection of multi-origin brain tumor MRI scans from multiple centers publicly available, along with corresponding clinical non-imaging data, for research purposes. 
 
 
